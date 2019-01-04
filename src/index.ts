@@ -24,7 +24,7 @@ const fetchPendingPullRequests = (): Promise<ChannelMap> => {
     body: `{"query":"query {\\n    organization(login:\\"${orgName}\\") {\\n    \\tname,\\n    \\trepositories(first: 20) {\\n        nodes {\\n          name\\n          pullRequests(first: 20, states: [OPEN]) {\\n            totalCount\\n            nodes {\\n              number\\n              reviewRequests(first: 5) {\\n                nodes {\\n                  requestedReviewer {\\n                    ...on User {\\n                      login\\n                    }\\n                  }\\n                }\\n              }\\n              resourcePath\\n              title\\n              createdAt\\n              reviews(first: 5) {\\n                nodes {\\n                  author {\\n                    login\\n                  }\\n                  state\\n                }\\n              }\\n            }\\n          }\\n        }\\n      }\\n  \\t}\\n}"}`
   };
 
-  return requestPromise(graphOptions).then((prResults) => {
+  return requestPromise(graphOptions).then((prResults: any) => {
     const repos = jsonpath.query(JSON.parse(prResults), '$..organization..nodes[*].pullRequests');
     const reposWithPR = repos.filter(pr => pr.totalCount > 0);
     reposWithPR.forEach(repo => {

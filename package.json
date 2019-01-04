@@ -16,9 +16,7 @@
   "devDependencies": {
     "@types/node-fetch": "^2.1.4",
     "@types/request-promise-native": "^1.0.15",
-    "rimraf": "^2.6.3",
-    "ts-node": "^7.0.1",
-    "typescript": "^3.2.2"
+    "@types/jsonpath": "^0.2.0"
   },
   "files": [
     "es",
@@ -29,7 +27,6 @@
   "module": "./es/index.js",
   "dependencies": {
     "@slack/client": "^4.8.0",
-    "@types/jsonpath": "^0.2.0",
     "jsonpath": "^1.0.0",
     "moment": "^2.23.0",
     "request": "^2.88.0",
