@@ -1,0 +1,38 @@
+{
+  "name": "pr-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:commonjs": "rimraf lib && tsc --target es5 --outDir lib --module commonjs --declaration",
+    "build:es": "rimraf es && tsc --target es6 --outDir es --module es6",
+    "build": "npm run build:commonjs && npm run build:es",
+    "ts": "ts-node src/",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node-fetch": "^2.1.4",
+    "@types/request-promise-native": "^1.0.15",
+    "rimraf": "^2.6.3",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  },
+  "files": [
+    "es",
+    "lib"
+  ],
+  "types": "./lib/index.d.ts",
+  "jsnext:main": "./es/index.js",
+  "module": "./es/index.js",
+  "dependencies": {
+    "@slack/client": "^4.8.0",
+    "@types/jsonpath": "^0.2.0",
+    "jsonpath": "^1.0.0",
+    "moment": "^2.23.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5"
+  }
+}

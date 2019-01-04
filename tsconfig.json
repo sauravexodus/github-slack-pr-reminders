@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "es2018",
+      "esnext.asynciterable"
+    ],
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+  },
+  "include": [
+    "src/channelMaps/channelMappings.json"
+  ],
+  "files": [
+    "src/index.ts"
+  ]
+}
