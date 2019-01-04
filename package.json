@@ -5,7 +5,7 @@
   "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:commonjs": "tsc --target es5 --outDir lib --module commonjs --declaration",
+    "build:commonjs": "tsc --target es2018 --outDir lib --module commonjs --declaration",
     "build:es": "tsc --target es6 --outDir es --module es6",
     "build": "npm run build:commonjs && npm run build:es",
     "ts": "ts-node src/",
