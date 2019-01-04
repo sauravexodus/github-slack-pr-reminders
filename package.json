@@ -5,8 +5,8 @@
   "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:commonjs": "node_modules/typescript/bin/tsc --target es5 --outDir lib --module commonjs --declaration",
-    "build:es": "node_modules/typescript/bin/tsc --target es6 --outDir es --module es6",
+    "build:commonjs": "tsc --target es5 --outDir lib --module commonjs --declaration",
+    "build:es": "tsc --target es6 --outDir es --module es6",
     "build": "npm run build:commonjs && npm run build:es",
     "ts": "ts-node src/",
     "prepublishOnly": "npm run build"
