@@ -14,7 +14,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node-fetch": "^2.1.4",
     "@types/request-promise-native": "^1.0.15",
     "@types/jsonpath": "^0.2.0"
   },
