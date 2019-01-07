@@ -1,8 +1,11 @@
 # ⚠️ Pull Request Reminders on Slack
 
-<img src="https://img.shields.io/badge/Platform-iOS%2012.1-brightgreen.svg?style=for-the-badge&logo=appveyor"/>
-<img src="https://img.shields.io/badge/code%20helpers-1-yellow.svg?style=for-the-badge&logo=appveyor"/>
-<img src="https://img.shields.io/badge/github%20api-v4-orange.svg?style=for-the-badge&logo=appveyor"/>
+<div style="display: flex; flex: 1; flex-direction: row;">
+  <img src="https://img.shields.io/badge/Platform-iOS%2012.1-brightgreen.svg?style=for-the-badge&logo=appveyor"/>
+  <img style="margin-left: 8px;" src="https://img.shields.io/badge/code%20helpers-1-yellow.svg?style=for-the-badge&logo=appveyor"/>
+  <img style="margin-left: 8px;" src="https://img.shields.io/badge/github%20api-v4-orange.svg?style=for-the-badge&logo=appveyor"/>
+</div>
+
 
 ## 🗜 Requirements
 
