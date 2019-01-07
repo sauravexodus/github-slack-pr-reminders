@@ -1,5 +1,9 @@
 # ⚠️ Pull Request Reminders on Slack
 
+<img src="https://img.shields.io/badge/Platform-iOS%2012.1-brightgreen.svg?style=for-the-badge&logo=appveyor"/>
+<img src="https://img.shields.io/badge/code%20helpers-1-yellow.svg?style=for-the-badge&logo=appveyor"/>
+<img src="https://img.shields.io/badge/github%20api-v4-orange.svg?style=for-the-badge&logo=appveyor"/>
+
 ## 🗜 Requirements
 
 1. Create a slack bot and obtain the OAuth token. (e.g `xoxb-##################...####`)
